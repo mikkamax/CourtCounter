@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CourtCounter</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="zero">0</string>
+    <string name="freeThrow">Free Throw</string>
+    <string name="twoPoints">+2 points</string>
+    <string name="threePoints">+3 points</string>
+    <string name="undo">Undo Last</string>
+    <string name="reset">Reset</string>
 </resources>

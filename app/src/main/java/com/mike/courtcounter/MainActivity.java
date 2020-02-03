@@ -16,25 +16,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void Plus3TeamA(View v) {
+    public void plus3TeamA(View v) {
         lastInputA = 3;
         scoreTeamA += lastInputA;
         displayForTeamA();
     }
 
-    public void Plus2TeamA(View v) {
+    public void plus2TeamA(View v) {
         lastInputA = 2;
         scoreTeamA += lastInputA;
         displayForTeamA();
     }
 
-    public void Plus1TeamA(View v) {
+    public void plus1TeamA(View v) {
         lastInputA = 1;
         scoreTeamA += lastInputA;
         displayForTeamA();
     }
 
-    public void UndoLastA(View v) {
+    public void undoLastA(View v) {
         scoreTeamA -= lastInputA;
         lastInputA = 0;
         displayForTeamA();
@@ -45,25 +45,25 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamAView.setText(String.valueOf(scoreTeamA));
     }
 
-    public void Plus3TeamB(View v) {
+    public void plus3TeamB(View v) {
         lastInputB = 3;
         scoreTeamB += lastInputB;
         displayForTeamB();
     }
 
-    public void Plus2TeamB(View v) {
+    public void plus2TeamB(View v) {
         lastInputB = 2;
         scoreTeamB += lastInputB;
         displayForTeamB();
     }
 
-    public void Plus1TeamB(View v) {
+    public void plus1TeamB(View v) {
         lastInputB = 1;
         scoreTeamB += lastInputB;
         displayForTeamB();
     }
 
-    public void UndoLastB(View v) {
+    public void undoLastB(View v) {
         scoreTeamB -= lastInputB;
         lastInputB = 0;
         displayForTeamB();
@@ -72,5 +72,14 @@ public class MainActivity extends AppCompatActivity {
     public void displayForTeamB() {
         TextView scoreTeamAView = findViewById(R.id.team_b_score);
         scoreTeamAView.setText(String.valueOf(scoreTeamB));
+    }
+
+    public void reset(View v) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        lastInputA = 0;
+        lastInputB = 0;
+        displayForTeamA();
+        displayForTeamB();
     }
 }
