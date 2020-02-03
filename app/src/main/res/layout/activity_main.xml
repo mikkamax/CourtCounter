@@ -50,4 +50,12 @@
         android:onClick="Plus1TeamA"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Undo last"
+        android:layout_margin="8dp"
+        android:onClick="UndoLastA"
+        />
+
 </LinearLayout>
